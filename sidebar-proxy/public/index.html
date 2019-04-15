@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <title>Restaurant Reviews - Tagaz</title>
+  </head>
+  <body>
+    <div id="modal"></div>
+    <div id="NavSearchBar"></div>
+    <div id="PhotoCarousel"></div>
+    <div id="SideBar"></div>
+    <div id="RelatedRestaurantApp"></div>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/materia/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="http://ec2-52-14-95-246.us-east-2.compute.amazonaws.com/r/:restaurant/bundle.js"></script>
+    <!-- <script src="http://ec2-54-86-57-168.compute-1.amazonaws.com/r/:restaurant/bundle.js"></script>
+    <script src="http://3.82.223.158/r/:restaurant/bundle.js"></script>
+    <script src="http://3.19.30.103/r/:restaurant/bundle.js"></script> -->
+    <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
+    <script>
+      // ReactDOM.render(
+      //   React.createElement(NavSearchBar),
+      //   document.getElementById('NavSearchBar')
+      // );
+      // ReactDOM.render(
+      //   React.createElement(PhotoCarouselApp),
+      //   document.getElementById('PhotoCarousel')
+      // );
+      // ReactDOM.render(
+      //   React.createElement(SideBar),
+      //   document.getElementById('SideBar')
+      // )
+      ReactDOM.render(
+        React.createElement(RelatedRestaurantApp),
+        document.getElementById('RelatedRestaurantApp')
+      );
+    </script>
+  </body>
+</html>
